@@ -1,0 +1,14 @@
+div {
+    text-align: center;
+    border: solid black;
+    margin: 100px 400px;
+    border-radius: 50px;
+}
+
+div h2 {
+    color: blue;
+}
+
+div h4 {
+    color: green;
+}

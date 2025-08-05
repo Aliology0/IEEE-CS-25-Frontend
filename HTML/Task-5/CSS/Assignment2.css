@@ -1,0 +1,13 @@
+.block {
+    background-color: aqua;
+}
+
+span {
+    background-color: greenyellow;
+}
+
+.text {
+    width: 150px;
+    border: solid grey;
+    word-wrap: break-word;
+}
