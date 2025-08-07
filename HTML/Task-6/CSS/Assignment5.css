@@ -1,0 +1,37 @@
+.Font-1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: italic;
+}
+
+.Font-2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Cairo";
+    font-weight: 700;
+
+}
+
+.Font-3 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Jomhuria";
+    font-weight: 400;
+}
+
+.font-50 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.font-40 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.font-30 {
+    text-align: center;
+    font-size: 1.5rem;
+}

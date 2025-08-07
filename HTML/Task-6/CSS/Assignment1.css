@@ -1,0 +1,17 @@
+div {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: solid black 3px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.Text1 {
+    color: #333;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
