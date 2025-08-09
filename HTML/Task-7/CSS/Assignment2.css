@@ -1,0 +1,21 @@
+table {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 20%;
+}
+
+th {
+    background-color: green;
+    color: white;
+    text-align: left;
+
+}
+
+td {
+    font-size: 20px;
+    border: solid black 2px;
+
+}
