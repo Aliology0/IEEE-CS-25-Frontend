@@ -1,0 +1,48 @@
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-align: center;
+    width: 230px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transition: 500ms;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+p {
+    color: #888;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+button {
+    margin: 0px 200px 0px 0px;
+    background-color: rgb(53, 53, 59);
+    color: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+
+.card:hover {
+    transform: rotate(2deg) scale(1.2);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+}

@@ -1,0 +1,46 @@
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-card-1,
+.profile-card-2 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-align: center;
+    width: 230px;
+    position: relative;
+    transition: 500ms;
+}
+
+.corner-dot {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+p {
+    margin: 0;
+    color: #888;
+}
+
+.profile-card-1:hover,
+.profile-card-2:hover {
+    transform: rotate(5deg) scale(1.2);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+}
