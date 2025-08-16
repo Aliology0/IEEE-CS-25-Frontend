@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+:root {
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+/* === Global Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background-color: var(--off-white);
+    color: var(--very-dark-blue);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* === Header === */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.logo {
+    width: 60px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--soft-red);
+}
+
+/* === Main Grid === */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* === Hero Section === */
+.hero-img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.hero-content {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.hero-text p {
+    color: var(--dark-grayish-blue);
+}
+
+.hero-text button {
+    background-color: var(--soft-red);
+    color: var(--very-dark-blue);
+    border: none;
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.hero-text button:hover {
+    background-color: var(--very-dark-blue);
+    color: white;
+}
+
+/* === Sidebar === */
+.sidebar {
+    background-color: var(--very-dark-blue);
+    color: var(--off-white);
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.sidebar h2 {
+    color: var(--soft-orange);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar article {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar h3:hover {
+    color: var(--soft-orange);
+}
+
+.sidebar p {
+    color: var(--grayish-blue);
+    font-size: 0.95rem;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid var(--dark-grayish-blue);
+    margin: 1.5rem 0;
+}
+
+/* === Cards Section === */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+}
+
+.card img {
+    width: 100px;
+    border-radius: 4px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--soft-red);
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.card h3:hover {
+    color: var(--soft-red);
+}
+
+.card p {
+    color: var(--dark-grayish-blue);
+    font-size: 0.9rem;
+}
+
+/* === Mobile === */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+}
